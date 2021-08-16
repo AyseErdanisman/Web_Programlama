@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="Home/Register">
+        <!--action: forumun nereye gönderileceğini belirtti-->
+        <p>
+            <!--bilgileri taşıyan kapsayıcı eleman-->
+            İsim: <input type="text" name="isim" placeholder="adınızı giriniz" required>
+            <!--textbox oluşturdu-->
+            <!-- form elemanına isim verdik ve gelen değer isim grubuna kaydedildi-->
+            <!--placeholder ile textbox içine silik yazı yazdık-->
+            <!--required bilgi girilmediği takdirde lütfen bu alanı dodurun uyarısı verdiri-->
+        </p>
+        <p>
+            Soyisim: <input type="text" name="soyad">
+        </p>
+        <p>
+            E-posta: <input type="email" name="email" required>
+            <!--type ı email olarak tanımladığımız için giriş verisi e mail formatında olmayınca uyarı mesajı veriyor-->
+        </p>
+        <p>
+            Beni Hatırla <input type="checkbox" name="benhatirla">
+        </p>
+        <p>
+            Cinsiyet <br>
+            Erkek <input type="radio" name="cinsiyet"> <br>
+            Kadın <input type="radio" name="cinsiyet"> <br>
+            Belirtmek İstemiyorum <input type="radio" name="cinsiyet"> <br>
+            <!--name e cinsiyet yazıp grupladığımız için radio butonlarda atık sadece 1 i seçilebilir-->
+        </p>
+        <p>
+            Hobiler<br>
+            <input type="checkbox" name="hobi"> Sinema <br>
+            <input type="checkbox" name="hobi"> Origami <br>
+            <input type="checkbox" name="hobi"> Doğa Yürüyüşü <br>
+        </p>
+        <p>
+            <select name="sehir">
+                <!--combobox-->
+                <option>İstanbul</option>
+                <option>İzmir</option>
+                <option>Bursa</option>
+            </select>
+        </p>
+        <p>
+            <select multiple name="sehirler">
+                <!--combobox-->
+                <option>İstanbul</option>
+                <option>İzmir</option>
+                <option>Bursa</option>
+            </select>
+        </p>
+        <input type="submit" value="Kaydet">
+        <!--buton imputla bilgileri action adersine gönderdi-->
+    </form>
+</body>
+</html>

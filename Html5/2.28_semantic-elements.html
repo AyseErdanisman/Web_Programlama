@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags</title>
+    <!--semantic tags ler anlamsal tagslerdir-->
+</head>
+<body>
+    <header>
+        <img id="logo">
+        <nav>
+            <!--yatay menü gibi bir şey yaptık ama tam anlamadım-->
+            <ul>
+                <li><a href="#">Ana Sayfa</a></li>
+                <li><a href="#">Kurs</a></li>
+                <li><a href="#">Makaleler</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <!--sayfanın sol ya da sağ tarafına alınan içeriği temsil etsi-->
+        <h2>Kategoriler</h2>
+        <nav>
+            <h3>Html</h3>
+            <ul>
+                <li><a href="#">Html nedir</a></li>
+                <li><a href="#">İlk html sayfası</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <h3>Css</h3>
+            <ul>
+                <li><a href="#">Css nedir</a></li>
+                <li><a href="#">Css söz dizimi</a></li>
+            </ul>
+        </nav>
+        <!--2 kategori ve alrında da link grubu yaptık-->
+    </aside>
+
+    <main>
+        <!--sayfanın içerik kısmı-->
+        <h1>Html ve Css Dersleri</h1>
+        <!--arama motoru sayfayı indexlediği zaman h1 etiketini arama sonuçlarında çıkartacaktır-->
+        <p>
+            Html ve Css dersleri için x.com'u ziyaret edebilirsiniz.
+            <!--başlıkla alakalı açıklama-->
+        </p>
+
+        <article>
+            <!--makale için kullanılır-->
+            <h2>Html nedir</h2>
+            <p>
+                Html nedir ve ne amaçla kullanılır? Bu yazımızda bulabilirsiniz.
+            </p>
+            <P>
+                Ayşe Erdanışman tarafından <time datetime="2021.05.05 17:44"> yayınlandı</time>
+                <!--bu sayede arama motoru makalenin ne zaman yayınladığını biliyor olacak-->
+            </P>
+        </article>
+
+        <article>
+            <h2>Css nedir</h2>
+            <p>
+                Css nedir ve ne amaçla kullanılır? Bu yazımızda bulabilirsiniz.
+            </p>
+        </article>
+
+        <section>
+            <!--herhangi bir gruba girmeyenler için kullanılır-->
+        </section>
+    </main>
+
+    <footer>
+        Tüm hakları saklıdır. 2021
+    </footer>
+</body>
+</html>

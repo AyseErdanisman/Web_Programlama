@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolar</title>
+</head>
+<body>
+    <table border="1" width="70%">
+        <!--border tablo çizgilerini ekledi 0 olsaydı gözükmeyeceklerdi-->
+        <!--width="100% tablo satır sınırlarının sayfayı kaplamasını sağlar, yüzdeyi değiştirerek ayarlanabilir(%60)-->
+        <thead>
+            <!--thead başlık ve diğer satırlar arasında fark oluşturmak için -->
+            <tr>
+                <th>
+                    <!--(table header) tr ile satır oluşturup th ile başlık attık-->
+                    Kurs Adı
+                </th>
+                <th>Kurs Saati</th>
+                <th>Ders Saati</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--thead başlıklar içindi tbody de diğer satırlar için-->
+            <tr>
+                <!--table row(tr) satırı temsil eder-->
+                <td>
+                    <!--table data(td) tablo verilerini tutar, tr içine kat tane td eklersen o satırı o kadar 
+                    sütuna bölmüş olursun-->
+                    Kople Web Geliştime
+                </td>
+                <td>45</td>
+                <td>300</td>
+            </tr>
+
+            <tr>
+                <td>Core 2 Mvc Eğitim,: Sıfırdan İleri Seviye</td>
+                <td>30</td>
+                <td rowspan="2">200</td>
+                <!--rowspanla ile yukarıdan aşağıya 2 hücreyi birleştirdik-->
+            </tr>
+
+            <tr>
+                <td colspan="2">Core 2 Mvc Eğitim,: Sıfırdan İleri Seviye</td>
+                <!--colspan ile core 2 mvc eğitiminin 2 kolonu da kaplamasını sağladık (hücreleri birleştirdik)-->
+            </tr>
+    </tbody>
+    </table>
+</body>
+</html>

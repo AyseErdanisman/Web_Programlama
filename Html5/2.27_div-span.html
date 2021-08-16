@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div & Span</title>
+</head>
+<body>
+
+    <div>
+        <!--gruplama yapmamızı sağlar-->
+        <h1>Lorem ipsum dolor sit amet.</h1>
+
+        <p>
+            Lorem ipsum dolor <div>sit amet consectetur adipisicing elit.</div>Similique totam rerum, consequuntur minus dolorum, amet aperiam facere suscipit qui quidem possimus sit. Repellat dolorem reiciendis cupiditate ut dolor a rem?
+        <!--burada div p etiketiyle aynı görüntüyü verse de p bir gruplama yapmaz sadece çevreler, 
+        div ise o bölümü bir grup olarak gösterir-->
+        </p>
+
+        <p>
+            Lorem ipsum dolor <span style="color:darkorange"> amet consectetur adipisicing elit.</span> Voluptatibus aliquid aliquam dolorem qui fugiat commodi ullam quo libero cumque voluptas? Adipisci autem obcaecati error aliquam explicabo veritatis deserunt totam. Quibusdam.
+            <!--span da dive benzer ama div gibi block etiket değil inline etikedir. Bu şekilde renklendirme
+            işlemleri için kullanılabilir-->
+        </p>
+    </div>
+
+    <div id="menu">
+        Menü
+    </div>
+    
+    <div id="content">
+        İçerik
+    </div>
+
+    <div id="footer">
+        Sayfa Hakkında
+    </div>
+</body>
+</html>

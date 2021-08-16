@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box
+        {
+            width: 300px;
+            height: 300px;
+            border: 1px solid rebeccapurple;
+            display: inline-block;
+            /*sadece inline dersen genişlik ve yükseklik verilemediği için 300px ler devre dışı kalır
+            inline-block demen gerek*/
+        }
+
+        .redbackground
+        {
+            background-color: red;
+        }
+
+        .bluebackground
+        {
+            background-color: blue;
+        }
+
+        .orangebackground
+        {
+            background-color: orange;
+        }
+
+        #header
+        {
+            height: 150px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        Game Header
+    </div>
+
+    <div class="box redbackground">
+        Box #1
+    </div>
+
+    <div class="box bluebackground">
+        Box #2
+    </div>
+
+    <div class="box orangebackground">
+        Box #3
+    </div>
+</body>
+</html>

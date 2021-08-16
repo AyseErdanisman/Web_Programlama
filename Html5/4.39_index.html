@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p
+        {
+            /*color: red;*/
+            font-size: 20px !important;/**/
+            /*!important ile 20 pixeli her zaman baskın olarak kullandık*/
+        }
+
+        /*color özelliğinin tüm p leri etkilemesini istemiyoruz ve inline olarak da kullanamak istemiyoruz diyelim*/
+
+        .red
+        {
+            color: red;
+        }
+
+        .blue
+        {
+            color: blue;
+        }
+        /*bu noktayla başlayan etiketleri nerede kullanırsam o özellikler uygulanır ve inline olarak tanımlamamış oluruz*/
+
+        .f22
+        {
+            font-size: 22px;
+        }
+
+        .f30
+        {
+            font-size: 30px;
+        }
+
+        .f40
+        {
+            font-size: 40px;
+        }
+
+        h1
+        {
+            color: yellow;
+        }
+
+        /*böyle etiketler dışında bi de id kullanarak yapabilriz*/
+        /*unutma ki id eşsizdir ve sadece bir satırda tanımlanabilir*/
+        #header
+        {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header">Udemy kurslarımıza hoş geldiniz</h1>
+
+    <!--temiz kod yazma açısnından inline kullanım pek önerilmez, kodların okunabilirliğini bozar-->
+    <p class="red f22">Komple Uygulamalı Web Geliştirme</p>
+    <p class="f30">Komple Uygulamalı Web Geliştirme</p>
+    <p class="blue">Komple Uygulamalı Web Geliştirme</p>
+    <p class="f40">Komple Uygulamalı Web Geliştirme</p>
+
+</body>
+</html>
