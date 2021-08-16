@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body
+    {
+        color: brown;
+        font-size: 20px;
+    }
+
+    ul
+    {
+        color: darkgoldenrod;
+        font-size: 15px;
+    }
+
+    li
+    {
+        color: yellowgreen;
+    }
+
+    .orange 
+    {
+        /*class la verilen özlellik her zaman etiketle verilen özelliği ezer*/
+        color: orange !important;
+        /*important dersek li lerden ilkini passsivele ezerek yaptığımız değişikliği bu sefer orange ezer ve 
+        grey özelliği gözükmez*/
+    }
+
+    #passive
+    {
+        /*id ise class a göre daha özel olduğu için orange ezdi*/
+        color: grey;
+    }
+
+    a
+    {
+        /*
+        Normal şartlarda a yı burada tanımlamadığımız sürece uygulanan özellikler a ya uygulanmaz
+        color: red;
+        font-size: 25px
+        */
+        /*eğer yukarıdaki gibi farklı özellikler vermeyip bir üst elemanı olan li den özellikleri almak istersek:*/
+        color: inherit;
+        /*li ye uygulanan özellik a ya gelmiş oldu, bir üst elemandan miras almış oldu*/
+    }
+
+    span
+    {
+        color: chartreuse;
+        border: 1px solid rgb(14, 104, 104);
+    }
+
+    #inherit span
+    {
+        color: inherit;
+    }
+
+</style>
+
+<body>
+    <h1 class="orange">Komple Uygulamalı Web Geliştirme</h1>
+
+    <ul>
+        <li id="passive" class="orange">Html5</li>
+        <li>Css</li>
+        <li class="orange">Javascript</li>
+        <li>
+            <a href="#">Jquery</a>
+        </li>
+    </ul>
+    <div style="color: aqua;">
+        Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing.
+        <!--span etiketine verilen özellikler yüzünden border ve içinin rengi değişmez -->
+    </div>
+
+    <div id="inherit" style="color: yellow;">
+        Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing.
+        <!--id inheritle uygulanan inherit kavramı sayesinde color spanın bir üst elemanı olan div den kalıtım aldı-->
+    </div>
+
+    <div>
+        Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing.
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #section-one {
+            color: blue;
+            background-color: palegoldenrod;
+            width: 50%;
+            height: 100px;
+            /*100px ile sınırlandırdığımız için satır eklemeye 
+            devam edersek taşma yapacak bunu engellemek için scroll kullanabiliriz taşma olasa da
+            olmasa da scroll oluşur */
+            overflow: scroll;
+            /*taşmayı engellmek için gelecek alan etrafına scroll ekledik */
+            /*scroll yerine hidden deseydik taşan kısım gözükmeyhecekti veya 
+            auto deseydik taşma olması durumunda otomatikmenn scroll oluşacaktı*/
+        }
+
+        #section-two {
+            color: magenta;
+            background-color: peachpuff;
+            width: 300px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Komple Uygulamalı Web Geliştirme</h1>
+
+    <div id="section-one">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <div id="section-two">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+/*eternal css ile uygulanacak özellikleri tüm sayfalara uyguladık*/
+a
+{
+    color: red;
+    text-decoration: none;
+}
+
+li
+{
+    display: inline;
+}
+/*bu sayfayı diğer sayfalarla birleştirmek için link kullanmamız gerek*/
+
+h1
+{
+    background-color: deeppink;
+    /*bu etkili olmadı çünkü diğer sayfa içerisinde inline etiket baskın olduğu için değişim olmadı*/
+}
+ /*bu arada tek bir style.css dosyası yerinde her bir html sayfası için (örenğin index.css, reference.css, about.css gibi) o sayfaya özgü css dosyasıyla içerik düzenlenebilir*/

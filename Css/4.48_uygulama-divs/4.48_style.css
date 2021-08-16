@@ -1,0 +1,22 @@
+#container 
+{
+    width: 1140px;
+    background-color: cornsilk;
+}
+
+#blog-post-container
+{
+    width: 75%;
+    background-color: darksalmon;
+}
+
+#others-post
+{
+    width: 25%;
+    background-color: darkseagreen;
+}
+
+#author-box
+{
+    border: 1px solid steelblue;
+}

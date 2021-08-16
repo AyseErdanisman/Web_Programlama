@@ -1,0 +1,124 @@
+/*Pseudo Selectors ikiye ayrılır:*/
+
+/*Pseudo Element*/
+/*bir elemanın bir parçasının seçmek istedğimizde psuedo elements kullanırız. mesela bir paragrafın ilk harfi veya ilk satırı gibi*/
+
+p::first-line
+{
+    /*p lerin ilk satırını seçtik*/
+    /*çift (::)*/
+    font-weight: bold;
+    color: red;
+    word-spacing: 2px;
+    /*herbir kelime arasındaki mesafe*/
+    letter-spacing: 1px;
+    /*her bir harf arasındaki mesafe*/
+}
+
+p.about::first-line
+{
+    /*p etiketlerinden class ı about olanların ilk satırı*/
+    color: green;
+}
+
+p::first-letter
+{
+    /*p lerin ilk harfi*/
+    font-size: 48px;
+}
+
+p::after
+{
+    content: "";
+    display: block;
+    /*bir alta geldi*/
+    background-color: yellow;
+    padding: 10px;
+}
+
+ul li:first-child
+{
+    /*ul listesinin altındaki li lerden ilki*/
+    /*tek (:)*/
+    background-color: chartreuse;
+}
+
+/*Pseudo Class*/
+/*bir kapsamın bir parçasını seçmek istediğimizde. Mesela ul etiketi altındaki li ler*/
+
+ul li
+{
+    padding: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+ul li:last-child
+{
+    /*ul listesinin altındaki li lerden sonuncu*/
+    background-color: chartreuse;
+}
+
+ul li:nth-of-type(even)
+{
+    border: 2px solid green;
+    /*çift elemanlara yeşil çerçeve oluşturdu*/
+
+}
+
+ul li:nth-of-type(odd)
+{
+    border: 2px solid blue;
+    /*tek elemanlara mavi çerçeve oluşturdu*/
+
+}
+
+a
+{
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+a:link
+{
+    /*link in tıklanmamış hali*/
+    color: red;
+}
+
+a:visited
+{
+    /*link ziyarte edilmiş ise*/
+    color: grey;
+}
+
+a:hover
+{
+    /*mouse ile link üzerine geldiğimizde*/
+    color: white;
+    background-color: green;
+}
+
+a:active
+{
+    /*tıklayıp aktif hale getirdiğimizde*/
+    color: green;
+    background-color: gold;
+}
+
+span
+{
+    display: none;
+    background: yellow;
+    padding: 20px;
+}
+
+div:hover span
+{
+    /*div üzerine geldiğinde span olan yazı gözükecek*/
+    display: block;
+
+}

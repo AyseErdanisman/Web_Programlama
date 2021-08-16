@@ -1,0 +1,53 @@
+p[title]
+{
+	/*attiribute u title olanları seçtik*/
+	border: 1px solid gray;
+	padding: 5px;
+	/*padding kutu çerçevesi ve içerik arasındak mesafeyi 5px arttırır*/
+}
+
+p[title="third paragraph"]
+{
+	/*title attiribute u third paragraph a eşit olanları seçtik*/
+	background-color: gold;
+}
+
+p[title~="forth"]
+{
+	/*tilda eklemeden forth paragraph yerine sadece forth deseydik arka plan rengi değişmeyecekti*/
+	background-color: red;
+}
+
+a[href^="https"]
+{
+	/*a etiketlerinden başlangıcında https olanlar*/
+	color:red;
+}
+
+a[href$="com"]
+{
+	/*a etiketlerinden sonu com ile bitenler*/
+	color: aqua;
+}
+
+a[href="https://www.example.net"][target="_blank"]
+{
+	/*hem hrefi https://www.example.net olanlar hem de targetı _blank olanalar*/
+	color: yellow;
+}
+
+input[type="text"]
+{
+	/*inputlardan type ı text olanlar*/
+	display: block;
+	width: 150px;
+	background-color: red;
+}
+
+input[type="button"]
+{ 
+	/*inputlardan type ı button olanlar*/
+	background: #4CAF50;
+	color: #FFFFFF;
+	padding: 8px 16px;
+}

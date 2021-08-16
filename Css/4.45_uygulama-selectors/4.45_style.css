@@ -1,0 +1,160 @@
+/*<body> font size 14px ve bacground #f2f2f2*/
+body
+{
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+
+/*h1 etiketine grey border ve padding 5px ekle*/
+h1
+{
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+/*h2 et,ketlerinin rengini kırmızı yapınız*/
+h2
+{
+    color: red;
+}
+
+/*h2 etiketlerinden sınıfı active olana yeşil 
+border ekle*/
+h2.active
+/*arada bşluk olursa h2 etiketi altındaki active
+classına bakar, şu an h2 lerdeki class ı active
+olanları seçtik*/
+{
+    border: 1px solid green;
+}
+
+/*paragraf id sine sahip olan etikete font 
+kalınlığı verelim*/
+p#paragraf
+{
+    font-weight: bold;
+}
+
+/*div içerisindeki h3 etiketlerine gold arka 
+planı verelim (div içindeki tüm h3 ler)*/
+div h3
+{
+    background-color: gold;
+}
+
+/*h1 den sonra gelen aynı seviyedeki tüm p 
+etiketlerinin arka planı red olsun*/
+h1~p
+{
+    background-color: red;
+}
+
+/*div içerisindeki tüm p etiketlerinin arka planı
+yeşil olacak (üst etiketi div olanalar)*/
+div>p
+{
+    background-color: green;
+}
+
+/*tüm liste elemanlarına gray border ve 
+margin-top: 2px ekleyelim*/
+ul li
+{
+    border: 1px solid gray;
+    margin-top: 2px;
+    /*margin-top kutular arasından üsten 2px
+    mesafe bırakmamızı sağladı*/
+}
+
+/*listedeki active sınıfına sahip tüm elemanlara 
+gold arka plan ekleyin*/
+ul li.active
+{
+    background-color: gold;
+}
+
+/*liste elemanlarından ilkinin kelime aralığını
+arttır (satır değil kelimere arası mesafe :) )*/
+ul li:first-child
+{
+    word-spacing: 5px;
+    /*kelime aralıkları*/
+}
+
+/*liste elemanlarından en sondakinin harf 
+aralığını arttır*/
+ul li:last-child
+{
+    letter-spacing: 5px;
+    /*harf aralıkları*/
+}
+
+/*liste eleman indexi tek olanların yazı rengini
+değiştir*/
+ul li:nth-child(odd)
+{
+    color: darkblue;
+    /*listedeki 1, 3 ve 5. satırın rengi değişti*/
+    font-weight: bold;
+}
+
+/*liste eleman indexi çift olanların yazı rengini
+değiştir*/
+ul li:nth-child(even)
+{
+    color: orange;
+    font-weight: bold;
+}
+
+/*input nesnelerinden text ve password olanlara 
+aşağıdaki css kodlarını uygulayın*/
+input[type="text"],input[type="password"]
+{
+    width: 100%;
+    /*satırı tamamen kapladı*/
+    padding: 12px 20px;
+    /*
+    12 üst-alt mesafesi 
+    20 sağ-sol mesafesi
+    */
+    margin: 8px 0;
+    /*kutular arası mesafe */
+    box-sizing: border-box;
+}
+
+/*input nesnelerinden type ı submit olanlara 
+aşağıdaki css kodlarını uygulayın*/
+
+input[type="submit"]
+{
+    width: 100%;
+    background-color: green;
+    color: white;
+    padding: 12px 18px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 4px;
+    /*butonun köşelerindeki keskinlik*/
+    cursor: pointer;
+    /*mose ile üzerine geldiğimizde okun el
+    işaretine dönüşmesi*/
+}
+
+/*submit butonuna hover olayı gerçekleştiğinde arka plan
+rengini #45a049 yapınız*/
+
+input[type="submit"]:hover
+{
+    background-color: #45a049;
+}
+
+/*input kutularında type ı text olanların fokus olayı 
+gerçekleştiğinde arka plan renklerini lightgodenrodyellow
+yapın*/
+
+input[type="text"]:focus, input[type="password"]:focus
+{
+    background-color: lightgodenrodyellow;
+    /*bende neden çalışmadı bilmiyorum normalde etrafta 
+    gömük bir çerçeve oldu adamda :( */
+}

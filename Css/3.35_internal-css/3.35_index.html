@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Css</title>
+    <!--sayfa içerisinde css tanımları-->
+    <style>
+        /*Css kodlarını burada tanımlıyoruz. Bu bölümde kod yazma işlemine internal css diyoruz*/
+        p
+        {
+            /*Burada yazılan css kodları sayfadaki tüm p etiketlerini kapsar*/
+            color: darksalmon;
+            font-size: 20px;
+            text-align: right;
+            border: 1px solid red
+        }
+        h1
+        {
+            color: darkorange;
+            font-size: 35px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="border: 1px solid; color: red;">Web geliştirme</h1>
+
+    <p style="color: darkviolet;">Komple Uygulamalı Web Geliştirme</p>
+    <!--bu inline css dir-->
+    <!--buradaki inline css yukarıdaki internal css i ezmiş oldu-->
+    <p>Komple Uygulamalı Web Geliştirme</p>
+    <p style="border: none;">Komple Uygulamalı Web Geliştirme</p>
+    <!--burada none diyerek özelliğin bu p ye uygulanmasını engekkedik-->
+</body>
+</html>
