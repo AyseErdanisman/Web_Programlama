@@ -1,2 +1,2 @@
 # Web_Programlama
- Web programlama ögrenirken aldigim kisa kodlar ve aciklamalari
+ Web programlama ogrenirken aldigim kisa kodlar ve aciklamalari
