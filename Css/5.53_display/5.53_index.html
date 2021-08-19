@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style>
+        /* Display : none | inline | block | inline-block */
+
+        /* Browser Defaults */
+
+        /* Override Defaults  */
+
+        div
+        {
+            display: inline-block;
+            height: 200px;
+            background: rosybrown;
+            margin: 5px;
+        }
+
+        #first
+        {
+            width: 500px;
+            /*
+            display: none;
+            */
+            /*sayfa üzerinde görünmez hale geldi*/
+        }
+
+        span
+        {
+            background: rgb(71, 94, 95);
+            /*
+            width: 500px;
+            */
+            /*width 500px olmadı çünkü inline etiketlere width 
+            özelliği uygulanmaz*/
+            /*display özelliğini block yaparak varsayılan 
+            düzenden çıkartırsak*/
+            /*
+            display: block;
+            */
+            /*block olarak ayarladığımız için alt alta 
+            block şeklinde dizildiler ve width özelliğini 
+            uygulayabildik*/
+
+            /*Eğer block değil inline-block olarak kodu düzenlersek*/
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            /*inline- block iken de width ve height özelliklerini
+            uygulayabiliriz*/
+        }
+    </style>
+</head>
+<body>
+
+    <div id="first">first</div>
+    <div id="second">second</div>
+
+    <span>Deneme 1</span>
+    <span>Deneme 2</span>
+    <span>Deneme 3</span>
+    <br>
+    <a href="">Home</a>
+    <a href="">About</a>
+    <a href="">Contact</a>
+
+</body>
+</html>

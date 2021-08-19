@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Divs</title>
+
+    <style>
+        #container
+        {
+            background-color: gray;
+        }
+
+        /*
+        .clear
+        {
+            float işlemini yaptıktan sonra taşma olacağı için 
+            gri alan gözükmeyecek bunu engellemek için overflow
+            kullanılabilir
+            overflow: auto;
+        }
+        ya da yeni bir div tanımlarsak (container içindeki 4. div)
+        yine aynı sonuç elde edilebilir 
+        */
+
+        /*ya da pseudo selectros kullanarak da halledilebilir*/
+
+        .clearfix::after
+        {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .box
+        {
+            width: 170px;
+            height: 170px;
+            margin: 2px;
+        }
+
+        #first
+        {
+            background: red;
+            float: right;
+        }
+
+        #second
+        {
+            background: blue;
+            float: right;
+        }
+
+        #third
+        {
+            background: green;
+            float: right;
+        }
+
+        p::after
+        {
+            content: " - deneme";
+            /*her p etiketinden sonra - deneme içeriğini ekler*/
+            /* p::after dersek de yazıyı başa alır */
+            display: block;
+            /*p etiketinden sonra gelen içeriği blok yapsak 
+            görüntü Lorem, ipsum dolor. - deneme den 
+            Lorem, ipsum dolor.
+            - deneme 
+            olarak değişir */
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="clearfix">
+        <div id="first" class="box"></div>
+        <div id="second" class="box"></div>
+        <div id="third" class="box"></div>
+
+        <!--
+        <div style="clear: both;"></div>
+        burada inline olarak eksi uygulanan style özelliklerini
+        sıfırlarsak gri alan tekrar görünür hale gelir
+        -->
+    </div>
+
+    <p>Lorem, ipsum dolor.</p>
+
+</body>
+</html>

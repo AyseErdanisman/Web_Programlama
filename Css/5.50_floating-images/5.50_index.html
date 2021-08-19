@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floating Images</title>
+
+    <style>
+
+        p
+        {
+            border: 1px solid grey;
+            padding: 5px;
+            /*içerik ve border arası mesafe 5px oldu*/
+        }
+
+        /*fotoğraf etrafınfaki yazı azalıp yüksekliği fotograftan kısa olunca çerçeve yazını etrafını kaplar ve float olan fotoğrafa göre 
+        yüksekliğini ayarlamaz bu taşmayı önelemek için overflow kullanılabilir*/
+        .clear
+        {
+            overflow: auto;
+        }
+
+        img
+        {
+            width: 200px;
+            float: left;
+            /*fotoğrafı sola ve yazının da fotoğraf etrafını çevrelemesini sağladık*/
+            margin-right: 10px;
+            /*fotoğraf ve içerik arasındaki boşluğu 10px olarak ayarladık*/
+
+        }
+    </style>
+</head>
+<body>
+    
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos odit accusantium consequatur commodi repellat ullam totam ad provident a soluta veritatis nostrum dolorem, nobis possimus nihil libero porro ipsam!
+    </p>
+
+    <p class="clear">
+        <img src="image.jpg" alt="">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda dignissimos, quidem ducimus sapiente nobis ullam optio maxime commodi error, molestias, ipsam nihil itaque voluptatem numquam in! Illum eaque omnis vel?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempore rerum molestiae quas hic culpa aspernatur repudiandae porro placeat adipisci. Eveniet repudiandae, modi voluptatibus ex molestiae vel eius qui delectus.
+    </p>
+
+</body>
+</html>
